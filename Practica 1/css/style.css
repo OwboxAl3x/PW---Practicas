@@ -1,0 +1,64 @@
+
+/* Propiedades de la cabecera*/
+#logo{
+    width: 22%;
+    min-width: 300px;
+    float: left;
+    margin-left: 2%;
+}
+
+#nombreyForm{
+    width: 76%;
+    float: left;
+}
+
+#nombreCentro{
+    margin-left: 15%;
+    float: left;
+}
+
+aside{
+    float: right;
+    margin-right: 2%;
+}
+
+hr{
+    clear: both;
+}
+
+/* Propiedades del body */
+#imgInicio{
+    width: 100%;
+}
+
+#imgyFrase{
+    float: left;
+    width: 49%;
+    text-align: center;
+    min-width: 500px;
+}
+
+#menu{
+    float: left;
+    width: 50%;
+    min-width: 500px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#menu ul{
+    text-align: center;
+    list-style: none;
+    font-size: 67px;
+}
+
+#menu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades del footer */
+footer{
+    text-align: center;
+}
