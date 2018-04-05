@@ -38,7 +38,7 @@ hr{
     min-width: 500px;
 }
 
-#menu{
+#menuPrincipal{
     float: left;
     width: 50%;
     min-width: 500px;
@@ -47,13 +47,13 @@ hr{
     border-left-color: lightgray;
 }
 
-#menu ul{
+#menuPrincipal ul{
     text-align: center;
     list-style: none;
     font-size: 67px;
 }
 
-#menu ul a{
+#menuPrincipal ul a{
     text-decoration: none;
     color: black;
 }
@@ -61,4 +61,71 @@ hr{
 /* Propiedades del footer */
 footer{
     text-align: center;
+}
+
+/* Menu para demas paginas */
+
+#menuSecciones{
+    text-align: center;
+}
+
+#menuSecciones ul li{
+    display: inline;
+    margin: 3px;
+    border-left: 1px solid black;
+    border-right: 1px solid  black;
+}
+
+#menuSecciones ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedas de la página actividades */
+
+#actividades{
+    float: left;
+    width: 64%;
+    text-align: center;
+    min-width: 700px;
+}
+
+#actividades ul{
+    list-style: none;
+    /*font-size: 67px;*/
+    height: 900px;
+    overflow-y: auto;
+}
+
+#actividades ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.actividad{
+}
+
+.actividad .imgActi{
+    float: left;
+}
+
+.actividad .tituDescActi{
+    float: right;
+    width: 60%;
+    height: 119px;
+}
+
+#noticias{
+    float: left;
+    width: 35%;
+    min-width: 200px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#noticias ul{
+    text-align: center;
+    list-style: none;
+    font-size: 67px;
 }
