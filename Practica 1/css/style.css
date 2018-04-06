@@ -28,7 +28,7 @@ hr{
 
 /* Propiedades del body */
 #imgInicio{
-    width: 100%;
+    width: 80%;
 }
 
 #imgyFrase{
@@ -36,12 +36,19 @@ hr{
     width: 49%;
     text-align: center;
     min-width: 500px;
+    min-height: 750px;
+    max-height: 750px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: lightgray;
 }
 
 #menuPrincipal{
     float: left;
     width: 50%;
-    min-width: 500px;
+    min-width: 680px;
+    min-height: 750px;
+    max-height: 750px;
     border-left-style: solid;
     border-left-width: 2px;
     border-left-color: lightgray;
@@ -81,6 +88,11 @@ footer{
     color: black;
 }
 
+#menuSeleccionado{
+    font-weight: bold;
+    font-size: 120%;
+}
+
 /* Propiedas de la página actividades */
 
 #actividades{
@@ -93,7 +105,8 @@ footer{
 #actividades ul{
     list-style: none;
     /*font-size: 67px;*/
-    height: 900px;
+    min-height: 744px;
+    max-height: 800px;
     overflow-y: auto;
 }
 
@@ -102,23 +115,27 @@ footer{
     color: black;
 }
 
-.actividad{
-}
-
 .actividad .imgActi{
     float: left;
+    width: 30%;
+}
+
+.actividad .imgActi1{
+    width: 100%;
 }
 
 .actividad .tituDescActi{
     float: right;
     width: 60%;
-    height: 119px;
+    height: 178px;
 }
 
 #noticias{
     float: left;
     width: 35%;
     min-width: 200px;
+    min-height: 850px;
+    max-height: 900px;
     border-left-style: solid;
     border-left-width: 2px;
     border-left-color: lightgray;
@@ -127,5 +144,8 @@ footer{
 #noticias ul{
     text-align: center;
     list-style: none;
-    font-size: 67px;
+}
+
+.imgNoti{
+    width: 40%;
 }
