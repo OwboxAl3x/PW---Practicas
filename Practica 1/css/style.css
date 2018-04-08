@@ -104,7 +104,6 @@ footer{
 
 #actividades ul{
     list-style: none;
-    /*font-size: 67px;*/
     min-height: 744px;
     max-height: 800px;
     overflow-y: auto;
@@ -148,4 +147,58 @@ footer{
 
 .imgNoti{
     width: 40%;
+}
+
+/* Propiedades de la pagina de actividad individual */
+
+#actividadInd{
+
+    float: left;
+    text-align: center;
+    width: 49%;
+    min-width: 700px;
+    
+}
+
+#actividadInd h1{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#actividadInd .imgActi{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+#actividadInd .imgActi1{
+    width: 100%;
+}
+
+#descActi{
+    font-size: 130%;
+}
+
+#menuActividades{
+    float: left;
+    width: 50%;
+    text-align: center;
+    min-width: 700px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#menuActividades ul{
+    list-style: none;
+    min-height: 744px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+#menuActividades ul a{
+    text-decoration: none;
+    color: black;
 }
