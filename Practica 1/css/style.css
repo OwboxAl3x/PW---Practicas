@@ -202,3 +202,24 @@ footer{
     text-decoration: none;
     color: black;
 }
+
+/* Propiedades de la pagina de técnicos */
+
+.tecnicoInd{
+    text-align: center;
+    width: 32%;
+    float: left;
+    margin: 2px;
+}
+
+.imgTecni1{
+    width: 100%;
+}
+
+#tecnicos ul{
+    list-style: none;
+}
+
+#tecnicos ul li{
+    display: inline;
+}
