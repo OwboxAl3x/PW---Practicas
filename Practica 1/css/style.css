@@ -223,3 +223,34 @@ footer{
 #tecnicos ul li{
     display: inline;
 }
+
+/* Propiedades de la pagina del horario */
+
+#horario{
+    text-align: center;
+}
+
+#horario #tabla{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#tabla caption{
+    font-size: 250%;
+    margin-bottom: 3%;
+}
+
+#tabla th{
+    font-size: 160%;
+}
+
+#tabla td{
+    font-size: 120%;
+}
+
+#tabla #aviso{
+    color: red;
+    font-size: 120%;
+}
