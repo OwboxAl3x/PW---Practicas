@@ -282,3 +282,17 @@ footer{
 .imgPromo{
     width: 10%;
 }
+
+/* Propiedades de la pagina de alta de usuario */
+
+#altausuario{
+    text-align: center;
+}
+
+#altausuario h2{
+    margin-top: 12%;
+}
+
+#altausuario #continuar{
+    margin-bottom: 12%;
+}
