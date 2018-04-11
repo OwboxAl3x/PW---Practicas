@@ -268,3 +268,17 @@ footer{
     height: 300px;
     padding-top: 12%;
 }
+
+/* Propiedades de la pagina de precios */
+
+#precios{
+    text-align: center;
+}
+
+#precios ul{
+    list-style: none;
+}
+
+.imgPromo{
+    width: 10%;
+}
