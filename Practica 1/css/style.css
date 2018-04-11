@@ -255,6 +255,16 @@ footer{
     font-size: 120%;
 }
 
+/* Propiedades de la pagina del mapa */
+
 #mapa{
     width: 100%;
+}
+
+/* Propiedades de la pagina de contacto */
+
+#contacto{
+    text-align: center;
+    height: 300px;
+    padding-top: 12%;
 }
