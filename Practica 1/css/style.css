@@ -27,7 +27,36 @@ hr{
     clear: both;
 }
 
+@media (max-width:480px) {
+    #logo{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+    #imgLogo{
+        display: block;
+        margin: auto;
+    }
+    #nombreyForm{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    #nombreCentro{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+    aside{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+}
+
 /* Propiedades del body */
+
 #imgInicio{
     width: 80%;
 }
@@ -94,6 +123,13 @@ footer{
     font-size: 120%;
 }
 
+@media (max-width:480px) {
+    #menuSecciones ul{
+        margin: auto;
+        padding: 0px;
+    }
+}
+
 /* Propiedas de la página actividades */
 
 #actividades{
@@ -148,6 +184,39 @@ footer{
 
 .imgNoti{
     width: 40%;
+}
+
+@media (max-width:480px) {
+    #actividades{
+        float: none;
+        width: 100%;
+        min-width: 0px;
+    }
+    #actividades ul{
+        padding: 0px;
+    }
+    .actividad .imgActi{
+        float: none;
+        width: 100%;
+    }
+    .actividad .tituDescActi{
+        float: none;
+        width: 100%;
+        height: 55%;
+    }
+    #noticias{
+        float: none;
+        width: 100%;
+        border-left-width: 0px;
+        min-height: 0px;
+        max-height: 15000px;
+    }
+    #noticias ul{
+        padding: 0px;
+    }
+    .imgNoti{
+        width: 100%;
+    }
 }
 
 /* Propiedades de la pagina de actividad individual */
