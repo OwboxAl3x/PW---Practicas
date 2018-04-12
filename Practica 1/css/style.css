@@ -389,3 +389,29 @@ footer{
     width: 85%;
     float: right;
 }
+
+/* Propiedades de la pagina de servicios */
+
+#instalaciones{
+    float: left;
+    width: 49%;
+}
+
+#imgInstalaciones{
+    width: 100%;
+}
+
+#servicios{
+    float: left;
+    width: 50%;
+    height: 700px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#servicios ul{
+    text-align: center;
+    list-style: none;
+    font-size: 250%;
+}
