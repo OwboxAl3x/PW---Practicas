@@ -13,7 +13,8 @@
 }
 
 #nombreCentro{
-    margin-left: 15%;
+    margin-top: 3%;
+    margin-left: 17%;
     float: left;
 }
 
@@ -295,4 +296,96 @@ footer{
 
 #altausuario #continuar{
     margin-bottom: 12%;
+}
+
+/* Propiedades de la pagina del foro */
+
+#foro{
+    padding-top: 2%;
+}
+
+.hilo{
+    padding-top: 1%;
+}
+
+.hilo hr{
+    visibility: hidden;
+}
+
+.hilo{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hilo a{
+    text-decoration: none;
+    color: black;
+}
+
+.imgUsuario{
+    width: 5%;
+    float: left;
+}
+
+.titHilo{
+    float: left;
+    margin-left: 10%;
+}
+
+.desHilo{
+    margin-right: 5%;
+    float: right;
+}
+
+.replies{
+    float: right;
+    margin-right: 2%;
+}
+
+#formNewHilo{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.titDesc{
+    margin-left: 10%;
+    resize: none;
+}
+
+#formNewHilo .botones{
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+/* Propiedades de la pagina del hilo del foro */
+
+.mensaje{
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.mensaje hr{
+    visibility: hidden;
+}
+
+.imgAndName{
+    width: 10%;
+    float: left;
+    margin: 2%;
+    text-align: center;
+}
+
+.imgUsu1{
+    width: 100%;
+}
+
+.descHilo1{
+    margin-top: 2%;
+    width: 85%;
+    float: right;
 }
