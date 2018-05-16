@@ -1,4 +1,8 @@
-<!doctype html>
+<?php
+    
+    session_start();
+        
+?>
 <html lang="es">
 
     <head>
@@ -10,6 +14,7 @@
         <meta name="application-name" content="Centro Deportivo García">
         <meta name="author" content="Alejandro García Vallecillo">
         <meta name="description" content="Página web del Centro Deportivo García">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
@@ -18,7 +23,7 @@
 
             <section id="logo">
 
-                <a title="Logo" href="index2.html"><img id="imgLogo" src="../imagenes/logo.png" alt="Logo del centro deportivo" /></a>
+                <a title="Logo" href="../index.php"><img id="imgLogo" src="../imagenes/logo.png" alt="Logo del centro deportivo" /></a>
 
             </section>
 
@@ -28,8 +33,26 @@
 
                 <aside id="logIn">
 
-                    <p>Hola, Alejandro</p>
-                    <a href="../index.html">Desconectarse</a>
+                    <?php
+            
+                        if(isset($_POST['logout'])){
+                            session_destroy();
+                            header("Location: ../index.php");
+                        }
+                    
+                        if(isset($_SESSION['usuario'])){
+
+                            echo 
+                                "<p>Identificado como ".$_SESSION['usuario']."</p>";
+                    ?>
+                            <form method="POST">
+                                <INPUT type="submit" value="Log Out" name="logout">
+                            </form>
+                    <?php
+
+                        }
+
+                    ?>
 
                 </aside>
 
@@ -43,14 +66,14 @@
 
             <ul>
 
-                <li><a id="menuSeleccionado" href="actividades.html">Actividades</a></li>
-                <li><a href="horario.html">Horario</a></li>
-                <li><a href="tecnicos.html">Técnicos</a></li>
-                <li><a href="servicios.html">Instalaciones y Servicios</a></li>
-                <li><a href="localizacion.html">Localización</a></li>
-                <li><a href="precios.html">Precios y Promociones</a></li>
-                <li><a href="altausuario.html">Altas de usuarios</a></li>
-                <li><a href="foro.html">Foro</a></li>
+                <li><a id="menuSeleccionado" href="actividades.php">Actividades</a></li>
+                <li><a href="horario.php">Horario</a></li>
+                <li><a href="tecnicos.php">Técnicos</a></li>
+                <li><a href="servicios.php">Instalaciones y Servicios</a></li>
+                <li><a href="localizacion.php">Localización</a></li>
+                <li><a href="precios.php">Precios y Promociones</a></li>
+                <li><a href="formularioalta.php">Altas de usuarios</a></li>
+                <li><a href="foro.php">Foro</a></li>
 
             </ul>
 
@@ -58,20 +81,7 @@
 
         <hr/>
 
-        <section id="actividadInd">
-
-            <h1 id="tituloActi">Spinning</h1>
-
-            <section class="imgActi">
-                <img class="imgActi1" src="../imagenes/imgSpinning.jpg" alt="Imagen de la actividad" />
-            </section>
-
-            <p id="descActi">Es un ejercicio aerobico y de piernas principalmente, donde el monitor puede 
-                mediante el cambio de frecuencia de pedaleo y de la resistencia al movimiento, realizar todo tipo de intensidades.
-            </p>
-
-        </section>
-        <section id="menuActividades">
+        <section id="actividades">
 
             <ul>
 
@@ -85,7 +95,7 @@
 
                         <section class="tituDescActi">
                             <h4 class="tituloActi">Spinning</h4>
-                            <a class="enlaceActi" href="actividadInd.html">Saber mas aquí</a>
+                            <a class="enlaceActi" href="actividad1.php">Saber mas aquí</a>
                         </section>
 
                     </section>
@@ -214,12 +224,67 @@
             </ul>
 
         </section>
+        <section id="noticias">
+
+            <ul>
+
+                <li>
+
+                    <section class="noticiaInd">
+
+                        <img class="imgNoti" src="../imagenes/imgNoticia1.jpg" alt="Imagen de la noticia" />
+
+                        <h3>Nuevo beneficio del ayuno intermitente</h3>
+
+                    </section>
+
+                </li>
+                <hr/>
+                <li>
+                    
+                    <section class="noticiaInd">
+
+                        <img class="imgNoti" src="../imagenes/imgNoticia2.jpg" alt="Imagen de la noticia" />
+
+                        <h3>Si quieres dejar de fumar este año, ni parches ni 'mono': apúntate al gimnasio</h3>
+
+                    </section>
+
+                </li>
+                <hr/>
+                <li>
+
+                    <section class="noticiaInd">
+
+                        <img class="imgNoti" src="../imagenes/imgNoticia1.jpg" alt="Imagen de la noticia" />
+
+                        <h3>Nuevo beneficio del ayuno intermitente</h3>
+
+                    </section>
+
+                </li>
+                <hr/>
+                <li>
+                    
+                    <section class="noticiaInd">
+
+                        <img class="imgNoti" src="../imagenes/imgNoticia2.jpg" alt="Imagen de la noticia" />
+
+                        <h3>Si quieres dejar de fumar este año, ni parches ni 'mono': apúntate al gimnasio</h3>
+
+                    </section>
+
+                </li>
+
+            </ul>
+
+        </section>
 
         <hr/>
 
         <footer>
 
-            <a href="contacto.html">Contacto</a>
+            <a href="contacto.php">Contacto</a>
             <a href="../como_se_hizo.pdf">Como se hizo</a>
 
         </footer>

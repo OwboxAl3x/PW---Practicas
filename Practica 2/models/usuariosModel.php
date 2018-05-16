@@ -30,7 +30,7 @@
                 return false;
             }
             
-            if($consulta->num_rows>0){
+            if($consulta->rowCount()>0){
                 return false;
             }
             
@@ -47,12 +47,12 @@
         public function buscar($username, $password) {
             
             $result = $this->db->query("SELECT * FROM Users WHERE (Seudonimo='".$username."') && (Contrasenia='".$password."');");
-            
+
             if(!$result){
                 return false;
             }
             
-            if($result->num_rows<1){
+            if($result->rowCount()<1){
                 return false;
             }
             
