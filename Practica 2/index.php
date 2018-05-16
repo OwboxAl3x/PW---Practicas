@@ -1,0 +1,89 @@
+<?php
+    require("html/db.php");
+    
+    session_start();
+
+    require("controllers/usuariosController.php");
+        
+?>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Centro Deportivo García</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="application-name" content="Centro Deportivo García">
+        <meta name="author" content="Alejandro García Vallecillo">
+        <meta name="description" content="Página web del Centro Deportivo García">
+
+    </head>
+    <body>
+
+        <header>
+
+            <section id="logo">
+
+                <a title="Logo" href="index.html"><img id="imgLogo" src="imagenes/logo.png" alt="Logo del centro deportivo" /></a>
+
+            </section>
+
+            <section id="nombreyForm">
+
+                <h1 id="nombreCentro">CENTRO DEPORTIVO GARCÍA</h1>
+
+                <aside id="logIn">
+
+                    <form method="POST" action="html/index2.html">
+
+                        <label>Usuario:</label><br/>
+                        <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required /><br/>
+                        <label>Contraseña:</label><br/>
+                        <input type="password" name="contraseña" placeholder="Contraseña" required /><br/>
+                        <INPUT type="submit" value="Log In"> <INPUT type="reset">
+
+                    </form>
+
+                </aside>
+
+            </section>
+
+        </header>
+
+        <hr/>
+
+        <section id="imgyFrase">
+
+            <h2 id="frase">¡Tu puedes con todo!</h2>
+            <img id="imgInicio" src="imagenes/imgInicio.png" alt="Imagen de inicio">
+
+        </section>
+        <section id="menuPrincipal">
+
+            <ul>
+
+                <li><a href="#">Actividades</a></li>
+                <li><a href="#">Horario</a></li>
+                <li><a href="#">Técnicos</a></li>
+                <li><a href="#">Instalaciones y Servicios</a></li>
+                <li><a href="#">Localización</a></li>
+                <li><a href="#">Precios y Promociones</a></li>
+                <li><a href="html/formularioalta.html">Altas de usuarios</a></li>
+                <li><a href="#">Foro</a></li>
+
+            </ul>
+
+        </section>
+
+        <hr/>
+
+        <footer>
+
+            <a href="html/contacto.html">Contacto</a>
+            <a href="como_se_hizo.pdf">Como se hizo</a>
+
+        </footer>
+
+    </body>
+
+</html>

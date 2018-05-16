@@ -1,0 +1,486 @@
+
+/* Propiedades de la cabecera*/
+#logo{
+    width: 22%;
+    min-width: 300px;
+    float: left;
+    margin-left: 2%;
+}
+
+#nombreyForm{
+    width: 76%;
+    float: left;
+}
+
+#nombreCentro{
+    margin-top: 3%;
+    margin-left: 17%;
+    float: left;
+}
+
+aside{
+    float: right;
+    margin-right: 2%;
+}
+
+hr{
+    clear: both;
+}
+
+@media (max-width:480px) {
+    #logo{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+    #imgLogo{
+        display: block;
+        margin: auto;
+    }
+    #nombreyForm{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    #nombreCentro{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        float: none;
+    }
+    aside{
+        width: 100%;
+        float: none;
+        margin: auto;
+    }
+}
+
+/* Propiedades del body */
+
+#imgInicio{
+    width: 80%;
+}
+
+#imgyFrase{
+    float: left;
+    width: 49%;
+    text-align: center;
+    min-width: 500px;
+    min-height: 750px;
+    max-height: 750px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: lightgray;
+}
+
+#menuPrincipal{
+    float: left;
+    width: 50%;
+    min-width: 680px;
+    min-height: 750px;
+    max-height: 750px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#menuPrincipal ul{
+    text-align: center;
+    list-style: none;
+    font-size: 67px;
+}
+
+#menuPrincipal ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades del footer */
+footer{
+    text-align: center;
+}
+
+/* Menu para demas paginas */
+
+#menuSecciones{
+    text-align: center;
+}
+
+#menuSecciones ul li{
+    display: inline;
+    margin: 3px;
+    border-left: 1px solid black;
+    border-right: 1px solid  black;
+}
+
+#menuSecciones ul a{
+    text-decoration: none;
+    color: black;
+}
+
+#menuSeleccionado{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+@media (max-width:480px) {
+    #menuSecciones ul{
+        margin: auto;
+        padding: 0px;
+    }
+}
+
+/* Propiedas de la página actividades */
+
+#actividades{
+    float: left;
+    width: 64%;
+    text-align: center;
+    min-width: 700px;
+}
+
+#actividades ul{
+    list-style: none;
+    min-height: 744px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+#actividades ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.actividad .imgActi{
+    float: left;
+    width: 30%;
+}
+
+.actividad .imgActi1{
+    width: 100%;
+}
+
+.actividad .tituDescActi{
+    float: right;
+    width: 60%;
+    height: 178px;
+}
+
+#noticias{
+    float: left;
+    width: 35%;
+    min-width: 200px;
+    min-height: 850px;
+    max-height: 900px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#noticias ul{
+    text-align: center;
+    list-style: none;
+}
+
+.imgNoti{
+    width: 40%;
+}
+
+@media (max-width:480px) {
+    #actividades{
+        float: none;
+        width: 100%;
+        min-width: 0px;
+    }
+    #actividades ul{
+        padding: 0px;
+    }
+    .actividad .imgActi{
+        float: none;
+        width: 100%;
+    }
+    .actividad .tituDescActi{
+        float: none;
+        width: 100%;
+        height: 55%;
+    }
+    #noticias{
+        float: none;
+        width: 100%;
+        border-left-width: 0px;
+        min-height: 0px;
+        max-height: 15000px;
+    }
+    #noticias ul{
+        padding: 0px;
+    }
+    .imgNoti{
+        width: 100%;
+    }
+}
+
+/* Propiedades de la pagina de actividad individual */
+
+#actividadInd{
+
+    float: left;
+    text-align: center;
+    width: 49%;
+    min-width: 700px;
+    
+}
+
+#actividadInd h1{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#actividadInd .imgActi{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+#actividadInd .imgActi1{
+    width: 100%;
+}
+
+#descActi{
+    font-size: 130%;
+}
+
+#menuActividades{
+    float: left;
+    width: 50%;
+    text-align: center;
+    min-width: 700px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#menuActividades ul{
+    list-style: none;
+    min-height: 744px;
+    max-height: 800px;
+    overflow-y: auto;
+}
+
+#menuActividades ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Propiedades de la pagina de técnicos */
+
+.tecnicoInd{
+    text-align: center;
+    width: 32%;
+    float: left;
+    margin: 2px;
+}
+
+.imgTecni1{
+    width: 100%;
+}
+
+#tecnicos ul{
+    list-style: none;
+}
+
+#tecnicos ul li{
+    display: inline;
+}
+
+/* Propiedades de la pagina del horario */
+
+#horario{
+    text-align: center;
+}
+
+#horario #tabla{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+#tabla caption{
+    font-size: 250%;
+    margin-bottom: 3%;
+}
+
+#tabla th{
+    font-size: 160%;
+}
+
+#tabla td{
+    font-size: 120%;
+}
+
+#tabla #aviso{
+    color: red;
+    font-size: 120%;
+}
+
+/* Propiedades de la pagina del mapa */
+
+#mapa{
+    width: 100%;
+}
+
+/* Propiedades de la pagina de contacto */
+
+#contacto{
+    text-align: center;
+    height: 300px;
+    padding-top: 12%;
+}
+
+/* Propiedades de la pagina de precios */
+
+#precios{
+    text-align: center;
+}
+
+#precios ul{
+    list-style: none;
+}
+
+.imgPromo{
+    width: 10%;
+}
+
+/* Propiedades de la pagina de alta de usuario */
+
+#altausuario{
+    text-align: center;
+}
+
+#altausuario h2{
+    margin-top: 12%;
+}
+
+#altausuario #continuar{
+    margin-bottom: 12%;
+}
+
+/* Propiedades de la pagina del foro */
+
+#foro{
+    padding-top: 2%;
+}
+
+.hilo{
+    padding-top: 1%;
+}
+
+.hilo hr{
+    visibility: hidden;
+}
+
+.hilo{
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.hilo a{
+    text-decoration: none;
+    color: black;
+}
+
+.imgUsuario{
+    width: 5%;
+    float: left;
+}
+
+.titHilo{
+    float: left;
+    margin-left: 10%;
+}
+
+.desHilo{
+    margin-right: 5%;
+    float: right;
+}
+
+.replies{
+    float: right;
+    margin-right: 2%;
+}
+
+#formNewHilo{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.titDesc{
+    margin-left: 10%;
+    resize: none;
+}
+
+#formNewHilo .botones{
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+/* Propiedades de la pagina del hilo del foro */
+
+.mensaje{
+    margin: 5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.mensaje hr{
+    visibility: hidden;
+}
+
+.imgAndName{
+    width: 10%;
+    float: left;
+    margin: 2%;
+    text-align: center;
+}
+
+.imgUsu1{
+    width: 100%;
+}
+
+.descHilo1{
+    margin-top: 2%;
+    width: 85%;
+    float: right;
+}
+
+/* Propiedades de la pagina de servicios */
+
+#instalaciones{
+    float: left;
+    width: 49%;
+}
+
+#imgInstalaciones{
+    width: 100%;
+}
+
+#servicios{
+    float: left;
+    width: 50%;
+    height: 700px;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: lightgray;
+}
+
+#servicios ul{
+    text-align: center;
+    list-style: none;
+    font-size: 250%;
+}
