@@ -1,9 +1,12 @@
 <?php
 
 //Llamada al modelo
-include("models/usuariosModel.php");
+require("models/usuariosModel.php");
 
-//Buscar usuario
+// Buscar usuario
 $usuarios=new usuariosModel();
+
+// Registrar usuario
+$usuarios2=new usuariosModel();
 
 ?>

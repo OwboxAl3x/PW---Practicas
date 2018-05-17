@@ -359,12 +359,10 @@ footer{
     text-align: center;
 }
 
-#altausuario h2{
-    margin-top: 12%;
-}
+/* Propiedades de la pagina de perfil */
 
-#altausuario #continuar{
-    margin-bottom: 12%;
+#imgPerfil{
+    width: 10%;
 }
 
 /* Propiedades de la pagina del foro */

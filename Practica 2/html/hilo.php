@@ -71,7 +71,7 @@
                 <li><a href="servicios.php">Instalaciones y Servicios</a></li>
                 <li><a href="localizacion.php">Localización</a></li>
                 <li><a href="precios.php">Precios y Promociones</a></li>
-                <li><a href="formularioalta.php">Altas de usuarios</a></li>
+                <li><a href="perfil.php">Perfil</a></li>
                 <li><a id="menuSeleccionado" href="foro.php">Foro</a></li>
 
             </ul>

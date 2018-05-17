@@ -115,7 +115,7 @@
                 <li><a href="html/servicios.php">Instalaciones y Servicios</a></li>
                 <li><a href="html/localizacion.php">Localización</a></li>
                 <li><a href="html/precios.php">Precios y Promociones</a></li>
-                <li><a href="html/altausuario.php">Altas de usuarios</a></li>
+                <li><a href="html/perfil.php">Perfil</a></li>
                 <li><a href="html/foro.php">Foro</a></li>
 
             </ul>
@@ -131,7 +131,7 @@
                 <li><a href="#">Instalaciones y Servicios</a></li>
                 <li><a href="#">Localización</a></li>
                 <li><a href="#">Precios y Promociones</a></li>
-                <li><a href="html/formularioalta.php">Altas de usuarios</a></li>
+                <li><a href="formularioalta.php">Altas de usuarios</a></li>
                 <li><a href="#">Foro</a></li>
 
             </ul>

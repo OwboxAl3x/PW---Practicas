@@ -22,7 +22,7 @@
 
         }
 
-        public function registrar($username, $password) {
+        public function registrar($username, $password, $dni, $nombre, $apellidos, $telefono, $direccion, $ciudad, $pais, $fechacreacion, $email) {
         
             $consulta = $this->db->query("SELECT * FROM Users WHERE Seudonimo='".$username."'");
 
@@ -34,7 +34,7 @@
                 return false;
             }
             
-            $consulta = $this->db->query("INSERT INTO Users (ID, NombreUsuario, Contraseña, Privilegios) VALUES (NULL, '".$username."', '".$password."',0);");
+            $consulta = $this->db->query("INSERT INTO Users (DNI, Nombre, Apellidos, Telefono, Direccion, Ciudad, Pais, Fecha_Creacion, Email, Seudonimo, Contrasenia) VALUES ('".$dni."', '".$nombre."', '".$apellidos."', '".$telefono."', '".$direccion."', '".$ciudad."', '".$pais."', '".$fechacreacion."', '".$email."', '".$username."', '".$password."');");
             
             if(!$consulta){
                 return false;

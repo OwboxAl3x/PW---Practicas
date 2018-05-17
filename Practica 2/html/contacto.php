@@ -46,8 +46,28 @@
                 <li><a href="servicios.php">Instalaciones y Servicios</a></li>
                 <li><a href="localizacion.php">Localización</a></li>
                 <li><a href="precios.php">Precios y Promociones</a></li>
-                <li><a href="formularioalta.php">Altas de usuarios</a></li>
+
+                <?php
+                    if(isset($_SESSION['usuario'])){
+                ?>
+
+                <li><a href="perfil.php">Perfil</a></li>
+
+                <?php
+                    } else {
+                ?>
+
+                <li><a href="perfil.php">Altas de usuarios</a></li>
+
+                <?php
+
+                    }
+
+                ?>
+
                 <li><a href="foro.php">Foro</a></li>
+
+                
 
             </ul>
 

@@ -9,7 +9,6 @@
 
         <meta charset="utf-8">
         <title>Centro Deportivo García</title>
-        <!-- <base href="http://www.ejemplo.es/"> -->
         <link rel="stylesheet" href="../css/style.css">
         <meta name="application-name" content="Centro Deportivo García">
         <meta name="author" content="Alejandro García Vallecillo">
@@ -71,7 +70,7 @@
                 <li><a href="servicios.php">Instalaciones y Servicios</a></li>
                 <li><a href="localizacion.php">Localización</a></li>
                 <li><a href="precios.php">Precios y Promociones</a></li>
-                <li><a id="menuSeleccionado" href="altausuario.php">Altas de usuarios</a></li>
+                <li><a id="menuSeleccionado" href="perfil.php">Perfil</a></li>
                 <li><a href="foro.php">Foro</a></li>
 
             </ul>
@@ -80,12 +79,10 @@
 
         <hr/>
 
-        <section id="altausuario">
+        <section id="perfil">
 
-            <h2>Ya estas registrado!!</h2>
-            <a href="../index.php">Continuar -></a>
-            <p id="continuar"></p>
-            
+            <img id="imgPerfil" src="../imagenes/imgUsuario1" alt="Imagen del usuario" />
+
         </section>
 
         <hr/>
