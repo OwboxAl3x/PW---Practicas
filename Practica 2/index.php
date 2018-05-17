@@ -1,4 +1,5 @@
 <?php
+
     require("db/db.php");
     
     session_start();
@@ -115,7 +116,7 @@
                 <li><a href="html/servicios.php">Instalaciones y Servicios</a></li>
                 <li><a href="html/localizacion.php">Localización</a></li>
                 <li><a href="html/precios.php">Precios y Promociones</a></li>
-                <li><a href="html/perfil.php">Perfil</a></li>
+                <li><a href="perfil.php">Perfil</a></li>
                 <li><a href="html/foro.php">Foro</a></li>
 
             </ul>

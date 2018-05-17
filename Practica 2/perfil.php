@@ -1,7 +1,11 @@
 <?php
     
+    require("db/db.php");
+    
     session_start();
-        
+
+    require("controllers/usuariosController.php");
+
 ?>
 <html lang="es">
 
@@ -9,7 +13,7 @@
 
         <meta charset="utf-8">
         <title>Centro Deportivo García</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta name="application-name" content="Centro Deportivo García">
         <meta name="author" content="Alejandro García Vallecillo">
         <meta name="description" content="Página web del Centro Deportivo García">
@@ -21,7 +25,7 @@
 
             <section id="logo">
 
-                <a title="Logo" href="../index.php"><img id="imgLogo" src="../imagenes/logo.png" alt="Logo del centro deportivo" /></a>
+                <a title="Logo" href="index.php"><img id="imgLogo" src="imagenes/logo.png" alt="Logo del centro deportivo" /></a>
 
             </section>
 
@@ -64,14 +68,14 @@
 
             <ul>
 
-                <li><a href="actividades.php">Actividades</a></li>
-                <li><a href="horario.php">Horario</a></li>
-                <li><a href="tecnicos.php">Técnicos</a></li>
-                <li><a href="servicios.php">Instalaciones y Servicios</a></li>
-                <li><a href="localizacion.php">Localización</a></li>
-                <li><a href="precios.php">Precios y Promociones</a></li>
+                <li><a href="html/actividades.php">Actividades</a></li>
+                <li><a href="html/horario.php">Horario</a></li>
+                <li><a href="html/tecnicos.php">Técnicos</a></li>
+                <li><a href="html/servicios.php">Instalaciones y Servicios</a></li>
+                <li><a href="html/localizacion.php">Localización</a></li>
+                <li><a href="html/precios.php">Precios y Promociones</a></li>
                 <li><a id="menuSeleccionado" href="perfil.php">Perfil</a></li>
-                <li><a href="foro.php">Foro</a></li>
+                <li><a href="html/foro.php">Foro</a></li>
 
             </ul>
 
@@ -81,7 +85,7 @@
 
         <section id="perfil">
 
-            <img id="imgPerfil" src="../imagenes/imgUsuario1" alt="Imagen del usuario" />
+            <img id="imgPerfil" src="imagenes/imgUsuario1" alt="Imagen del usuario" />
 
         </section>
 

@@ -37,11 +37,6 @@
 
                     <?php
 
-                        if(isset($_POST['logout'])){
-                            session_destroy();
-                            header("Location: index.php");
-                        }
-
                         $result = false;
 
                         if(isset($_POST['registrarse'])){
@@ -69,18 +64,6 @@
                                 header("Location: perfil.php");
 
                             }
-
-                        }
-
-                        if(isset($_SESSION['usuario'])){
-
-                            echo 
-                                "<p>Identificado como ".$_SESSION['usuario']."</p>";
-                    ?>
-                            <form method="POST">
-                                <INPUT type="submit" value="Log Out" name="logout">
-                            </form>
-                    <?php
 
                         }
 

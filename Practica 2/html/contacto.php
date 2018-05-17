@@ -51,13 +51,13 @@
                     if(isset($_SESSION['usuario'])){
                 ?>
 
-                <li><a href="perfil.php">Perfil</a></li>
+                <li><a href="../perfil.php">Perfil</a></li>
 
                 <?php
                     } else {
                 ?>
 
-                <li><a href="perfil.php">Altas de usuarios</a></li>
+                <li><a href="../formularioalta.php">Altas de usuarios</a></li>
 
                 <?php
 
