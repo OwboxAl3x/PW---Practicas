@@ -10,6 +10,9 @@ $usuarios=new usuariosModel();
 $usuarios2=new usuariosModel();
 
 // Perfil usuario
-$usuarios2=new usuariosModel();
+$usuarios3=new usuariosModel();
+
+// Actualizar perfil usuario
+$usuarios4=new usuariosModel();
 
 ?>

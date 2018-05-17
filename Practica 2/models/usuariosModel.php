@@ -12,10 +12,25 @@
 
         }
 
-        public function getUsuarios(){
+        public function actualizar($usernameAnt, $username, $password, $dni, $nombre, $apellidos, $telefono, $direccion, $ciudad, $pais, $fechacreacion, $email) {
+            
+            $result = $this->db->query("UPDATE Users SET Seudonimo='".$username."', Contrasenia='".$password."', 
+            DNI='".$dni."', Nombre='".$nombre."', Apellidos='".$apellidos."', Telefono='".$telefono."', 
+            Direccion='".$direccion."', Ciudad='".$ciudad."', Pais='".$pais."', Fecha_Creacion='".$fechacreacion."', 
+            Email='".$email."' WHERE Seudonimo='".$usernameAnt."'");
 
-            $consulta=$this->db->query("SELECT * FROM Users;");
-            while($filas=$consulta->fetch_assoc()){
+            if(!$result){
+                return false;
+            }
+            
+            return true;
+
+        }
+
+        public function getUsuario($username){
+
+            $consulta=$this->db->query("SELECT * FROM Users WHERE Seudonimo = '".$username."';");
+            while($filas=$consulta->fetch(PDO::FETCH_ASSOC)){
                 $this->usuarios[]=$filas;
             }
             return $this->usuarios;
@@ -24,7 +39,7 @@
 
         public function registrar($username, $password, $dni, $nombre, $apellidos, $telefono, $direccion, $ciudad, $pais, $fechacreacion, $email) {
         
-            $consulta = $this->db->query("SELECT * FROM Users WHERE Seudonimo='".$username."'");
+            $consulta = $this->db->query("SELECT * FROM Users WHERE Seudonimo='".$username."';");
 
             if(!$consulta){
                 return false;
@@ -34,7 +49,9 @@
                 return false;
             }
             
-            $consulta = $this->db->query("INSERT INTO Users (DNI, Nombre, Apellidos, Telefono, Direccion, Ciudad, Pais, Fecha_Creacion, Email, Seudonimo, Contrasenia) VALUES ('".$dni."', '".$nombre."', '".$apellidos."', '".$telefono."', '".$direccion."', '".$ciudad."', '".$pais."', '".$fechacreacion."', '".$email."', '".$username."', '".$password."');");
+            $consulta = $this->db->query("INSERT INTO Users (DNI, Nombre, Apellidos, Telefono, Direccion, Ciudad, Pais, Fecha_Creacion, 
+            Email, Seudonimo, Contrasenia) VALUES ('".$dni."', '".$nombre."', '".$apellidos."', '".$telefono."', '".$direccion."', 
+            '".$ciudad."', '".$pais."', '".$fechacreacion."', '".$email."', '".$username."', '".$password."');");
             
             if(!$consulta){
                 return false;

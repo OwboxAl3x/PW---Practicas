@@ -361,6 +361,10 @@ footer{
 
 /* Propiedades de la pagina de perfil */
 
+#perfil{
+    text-align: center;
+}
+
 #imgPerfil{
     width: 10%;
 }
