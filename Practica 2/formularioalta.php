@@ -162,7 +162,7 @@
         <footer>
 
             <a href="html/contacto.php">Contacto</a>
-            <a href="../como_se_hizo.pdf">Como se hizo</a>
+            <a href="como_se_hizo.pdf">Como se hizo</a>
 
         </footer>
 

@@ -65,7 +65,7 @@
 
                 ?>
 
-                <li><a href="foro.php">Foro</a></li>
+                <li><a href="../foro.php">Foro</a></li>
 
                 
 

@@ -75,7 +75,7 @@
                 <li><a href="html/localizacion.php">Localización</a></li>
                 <li><a href="html/precios.php">Precios y Promociones</a></li>
                 <li><a id="menuSeleccionado" href="perfil.php">Perfil</a></li>
-                <li><a href="html/foro.php">Foro</a></li>
+                <li><a href="foro.php">Foro</a></li>
 
             </ul>
 
@@ -207,7 +207,7 @@
         <footer>
 
             <a href="contacto.php">Contacto</a>
-            <a href="../como_se_hizo.pdf">Como se hizo</a>
+            <a href="como_se_hizo.pdf">Como se hizo</a>
 
         </footer>
 
