@@ -461,6 +461,22 @@ footer{
     float: right;
 }
 
+.hilosUser{
+    background-color: aliceblue;
+    margin-left: 13%;
+    padding-right: 10px; 
+    border: 1px solid black;
+    -moz-box-shadow: 3px 3px 4px #111;
+    -webkit-box-shadow: 3px 3px 4px #111;
+    box-shadow: 3px 3px 4px #111;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    z-index: 1000;
+    visibility: hidden;
+}
+
 /* Propiedades de la pagina de servicios */
 
 #instalaciones{

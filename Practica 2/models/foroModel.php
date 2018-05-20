@@ -126,6 +126,16 @@
 
         }
 
+        public function getHilosUser($dni){
+
+            $consulta=$this->db->query("SELECT * FROM Hilos WHERE DNI = ".$dni.";");
+            while($filas=$consulta->fetch(PDO::FETCH_ASSOC)){
+                $this->respuestas[]=$filas;
+            }
+            return $this->respuestas;
+
+        }
+
     }
 
 ?>

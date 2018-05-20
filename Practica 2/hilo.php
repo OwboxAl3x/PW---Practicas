@@ -15,6 +15,7 @@
         <meta charset="utf-8">
         <title>Centro Deportivo García</title>
         <link rel="stylesheet" href="css/style.css">
+        <script language="JavaScript" src="js/funciones.js"></script>
         <meta name="application-name" content="Centro Deportivo García">
         <meta name="author" content="Alejandro García Vallecillo">
         <meta name="description" content="Página web del Centro Deportivo García">
@@ -93,16 +94,36 @@
                 $result2 = $creador->getCreadorHilo($result[0]['DNI']);
                 $result3 = $respuestas->getRespuestas($idHilo);
                 $result4 = $respuestasUser->getRespuestasUser($result[0]['DNI']);
-            
-
+                $hilosPorDNI = $hilosUser->getHilosUser($result[0]['DNI']);
+        
             echo "<h2 titHilo1>".$result[0]['Titulo']."</h2>
 
-            
+            <section class='mensaje'>";
 
-            <section class='mensaje'>
+            ?>
 
-                <section class='imgAndName'>
-                    <img class='imgUsu1' src='imagenes/imgUsuario1.png' alt='Imagen del usuario' />
+                <section class="hilosUser">
+
+                    <ul class="listaHilos">
+                        <?php
+
+                        echo "<p class='tituloComment'>Hilos realizados por: ".$result2[0]['Seudonimo']."</p><hr/>";
+                        
+                            foreach($hilosPorDNI as $hiloDNI){
+
+                                echo "<li><p>".$hiloDNI['Titulo']."</p></li>";
+
+                            } 
+
+                        ?>
+                    </ul>
+
+                </section>
+
+            <?php
+
+                echo "<section class='imgAndName'>
+                    <img class='imgUsu1' src='imagenes/imgUsuario1.png' alt='Imagen del usuario' onmouseover='Desplegar(0)' onmouseout='Desplegar(0)'/>
                     <p class='nameUsu'>".$result2[0]['Seudonimo']."</p>
                     <p>Mensajes: ".count($result4)."</p>
                 </section>
@@ -113,17 +134,43 @@
 
             </section>";
 
+        $i = 1;
+
         foreach($result3 as $datosRespuesta){
 
             $creadorResp->creador = array();
             $result5 = $creadorResp->getCreadorRespuesta($datosRespuesta['DNI']);
             $respuestasUser->respuestas = array();
             $result6 = $respuestasUser->getRespuestasUser($datosRespuesta['DNI']);
+            $hilosUser->respuestas = array();
+            $hilosPorDNI = $hilosUser->getHilosUser($result5[0]['DNI']);
 
-            echo "<section class='mensaje'>
+            echo "<section class='mensaje'>";
 
-                <section class='imgAndName'>
-                    <img class='imgUsu1' src='imagenes/imgUsuario1.png' alt='Imagen del usuario' />
+            ?>
+
+                <section class="hilosUser">
+
+                    <ul class="listaHilos">
+                        <?php
+
+                        echo "<p class='tituloComment'>Hilos realizados por: ".$result5[0]['Seudonimo']."</p>
+                        <hr/>";
+                        
+                            foreach($hilosPorDNI as $hiloDNI){
+
+                                echo "<li><p class='hilos'>".$hiloDNI['Titulo']."</p></li>";
+
+                            }   
+                        ?>
+                    </ul>
+
+                </section>
+
+            <?php
+
+                echo "<section class='imgAndName'>
+                    <img class='imgUsu1' src='imagenes/imgUsuario1.png' alt='Imagen del usuario' onmouseover='Desplegar(".$i.")' onmouseout='Desplegar(".$i.")'/>
                     <p class='nameUsu'>".$result5[0]['Seudonimo']."</p>
                     <p>Mensajes: ".count($result6)."</p>
                 </section>
@@ -133,6 +180,8 @@
                 <hr/>
 
             </section>";
+
+            $i++;
 
         }
 

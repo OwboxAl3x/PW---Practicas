@@ -27,4 +27,7 @@ $creadorResp=new foroModel();
 // Crear nueva respuesta
 $nuevaResp=new foroModel();
 
+// Hilos por DNI
+$hilosUser=new foroModel();
+
 ?>
