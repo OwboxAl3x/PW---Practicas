@@ -210,10 +210,10 @@
 
             ?>
 
-            <form id="formNewHilo" method="POST">
+            <form id="formNewHilo" method="POST" onSubmit="return validacionResp()">
 
                 <h2>Nuevo Mensaje</h2>
-                <textarea class="titDesc" rows="10" cols="140" name="desNewHilo" required ></textarea><br/>
+                <textarea class="titDesc" id="texto" rows="10" cols="140" name="desNewHilo" required ></textarea><br/>
 
                 <INPUT class="botones" type="submit" value="Enviar" name="nuevaResp">
 

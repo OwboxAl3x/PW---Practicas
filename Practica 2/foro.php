@@ -136,11 +136,11 @@
 
             ?>
 
-            <form id="formNewHilo" method="POST">
+            <form id="formNewHilo" method="POST" onSubmit="return validacionForo()">
 
                 <h2>Nuevo Hilo</h2>
-                <input class="titDesc" type="text" size="130" name="titNewHilo" placeholder="Titulo del hilo" required /><br/><br/>
-                <textarea class="titDesc" rows="10" cols="140" name="desNewHilo" required></textarea><br/>
+                <input class="titDesc" id="titulo" type="text" size="130" name="titNewHilo" placeholder="Titulo del hilo" required /><br/><br/>
+                <textarea class="titDesc" id="descripcion" rows="10" cols="140" name="desNewHilo" required></textarea><br/>
 
                 <INPUT class="botones" type="submit" value="Enviar" name="nuevoHilo">
 
