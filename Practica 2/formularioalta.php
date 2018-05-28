@@ -56,7 +56,7 @@
                             
                             $result = $usuarios2->registrar($username, $password, $dni, $nombre, $apellidos, $telefono, $direccion, $ciudad, $pais, $edad, $email);
 
-                            if(!result){
+                            if(!$result){
                                 echo 
                                     "<p>No se ha podido registrar, intentelo de nuevo más tarde</p>";
                             }

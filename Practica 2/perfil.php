@@ -130,7 +130,7 @@
 
                         } else if(isset($_POST['editar'])){
 
-                            echo "<form id='formAlta' method='POST'>
+                            echo "<form id='formAlta' method='POST' onSubmit='return validacion()'>
 
                                 <h3>Datos LogIn</h3>
                                 <label for='email'>Email:</label>

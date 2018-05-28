@@ -39,7 +39,7 @@
 
         public function registrar($username, $password, $dni, $nombre, $apellidos, $telefono, $direccion, $ciudad, $pais, $fechacreacion, $email) {
         
-            $consulta = $this->db->query("SELECT * FROM Users WHERE Seudonimo='".$username."';");
+            $consulta = $this->db->query("SELECT * FROM Users WHERE (Seudonimo='".$username."' || DNI=".$dni.");");
 
             if(!$consulta){
                 return false;
