@@ -21,7 +21,7 @@ function validacion() {
     var errorMSG = document.getElementById("errores");
 
     if( !(/^[A-Za-z\_\-\.\s\xF1\xD1]+$/.test(seudonimo)) ) {
-        errorMSG.innerHTML = "El nombre no es valido.";
+        errorMSG.innerHTML = "El seudonimo no es valido.";
         return false;
     }
     else if (contrasenia1!=contrasenia2) {

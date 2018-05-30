@@ -14,6 +14,7 @@
         <meta charset="utf-8">
         <title>Centro Deportivo García</title>
         <link rel="stylesheet" href="css/style.css">
+        <script language="JavaScript" src="js/funciones.js"></script>
         <meta name="application-name" content="Centro Deportivo García">
         <meta name="author" content="Alejandro García Vallecillo">
         <meta name="description" content="Página web del Centro Deportivo García">
@@ -136,30 +137,31 @@
                                 <label for='email'>Email:</label>
                                 <input type='email' name='email' value='".$result[0]['Email']."' required /><br/>
                                 <label for='usuario'>Usuario:</label>
-                                <input type='text' name='seudonimo' value='".$result[0]['Seudonimo']."' required /><br/>
+                                <input type='text' id='seudonimo' name='seudonimo' value='".$result[0]['Seudonimo']."' required /><br/>
                                 <label for='contraseña'>Contraseña:</label>
-                                <input type='password' name='contrasenia' placeholder='Contraseña' required /><br/>
+                                <input type='password' id='contrasenia1' name='contrasenia' placeholder='Contraseña' required /><br/>
                                 <label for='contraseñaRep'>Repite Contraseña:</label>
-                                <input type='password' name='contraseniaRep' placeholder='Contraseña' required /><br/>
+                                <input type='password' id='contrasenia2' name='contraseniaRep' placeholder='Contraseña' required /><br/>
 
                                 <h3>Datos Personales</h3>
                                 <label for='nombre'>Nombre:</label>
-                                <input type='text' name='nombre' value='".$result[0]['Nombre']."' required /><br/>
+                                <input type='text' id='nombre' name='nombre' value='".$result[0]['Nombre']."' required /><br/>
                                 <label for='apellidos'>Apellidos:</label>
-                                <input type='text' name='apellidos' value='".$result[0]['Apellidos']."' required /><br/>
+                                <input type='text' id='apellidos' name='apellidos' value='".$result[0]['Apellidos']."' required /><br/>
                                 <label for='dni'>Documento de identidad:</label>
-                                <input type='text' name='dni' value='".$result[0]['DNI']."' required /><br/>
+                                <input type='text' id='dni' name='dni' value='".$result[0]['DNI']."' readonly='readonly' required/><br/>
                                 <label for='telefono'>Telefono de contacto:</label>
-                                <input type='text' name='telefono' value='".$result[0]['Telefono']."' required /><br/>
+                                <input type='tel' name='telefono' value='".$result[0]['Telefono']."' required /><br/>
                                 <label for='direccion'>Dirección:</label>
                                 <input type='text' name='direccion' value='".$result[0]['Direccion']."' required /><br/>
                                 <label for='ciudad'>Ciudad:</label>
-                                <input type='text' name='ciudad' value='".$result[0]['Ciudad']."' required /><br/>
+                                <input type='text' id='ciudad' name='ciudad' value='".$result[0]['Ciudad']."' required /><br/>
                                 <label for='pais'>Pais:</label>
-                                <input type='text' name='pais' value='".$result[0]['Pais']."' required /><br/>
+                                <input type='text' id='pais' name='pais' value='".$result[0]['Pais']."' required /><br/>
                                 <label for='edad'>Fecha de nacimiento:</label>";
                                 $nacimiento = new DateTime($result[0]['Fecha_Creacion']);
                                 echo "<input type='date' name='edad' value='".date_format($nacimiento, 'Y-m-d')."' required /><br/><br/>
+                                <p id='errores'></p>
                                 <INPUT type='submit' value='Guardar datos' name='guardarDatos'>
 
                             </form>";
